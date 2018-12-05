@@ -21,14 +21,14 @@ class TreeNode(object):
 			self.right.getListFromTree(listTree)
 
 def construct_maximum_binary_tree(nums):
-    if not nums: #递归终点
-        return None
-    i = nums.index(max(nums)) # 找到最大数量的索引
-    node = TreeNode(nums[i]) # 建立节点
-    # 以i索引为分界线，一分为二
-    node.left = construct_maximum_binary_tree(nums[:i])
-    node.right = construct_maximum_binary_tree(nums[i + 1:])
-    return node
+	if not nums: #递归终点
+		return None
+	i = nums.index(max(nums)) # 找到最大数量的索引
+	node = TreeNode(nums[i]) # 建立节点
+	# 以i索引为分界线，一分为二
+	node.left = construct_maximum_binary_tree(nums[:i])
+	node.right = construct_maximum_binary_tree(nums[i + 1:])
+	return node
 
 def main():
 	nums = [3, 2, 1, 6, 0, 5]

@@ -56,8 +56,8 @@ def main():
 
 	depth1 = maxDepthRecursion(tree) # 方法一：递归
 	depth2 = maxDepthIteration(tree) # 方法二：迭代
-	print("maxDepthRecursion:", depth1)
-	print("maxDepthIteration:", depth2)
+	print("maxDepth-Recursion:", depth1)
+	print("maxDepth-Iteration:", depth2)
 
 if __name__ == '__main__':
 	main()
